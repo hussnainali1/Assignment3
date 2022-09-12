@@ -34,7 +34,7 @@ while( loopCounter <= a){
 #' this is the solution for dijkstra Algorithm
 #'
 #' @param wiki_graph A DataFrame
-#' @param a A Number
+#' @param init_node A Number
 #'
 #' @return A Vector
 #' @export
@@ -46,12 +46,12 @@ while( loopCounter <= a){
 #' dijkstra(wiki_graph, 1)
 #' dijkstra(wiki_graph, 3)
 
-dijkstra <- function(wiki_graph, a){
-  stopifnot(!is.null(wiki_graph$v1), !is.null(wiki_graph$v2), !is.null(wiki_graph$w), a %in% unique(wiki_graph[[1]]))
-  stopifnot(is.data.frame(wiki_graph), is.numeric(a))
+dijkstra <- function(wiki_graph, init_node){
+  stopifnot(!is.null(wiki_graph$v1), !is.null(wiki_graph$v2), !is.null(wiki_graph$w), init_node %in% unique(wiki_graph[[1]]))
+  stopifnot(is.data.frame(wiki_graph), is.numeric(init_node))
   uniqueVal <- unique(wiki_graph[[1]]) #nodes
   finalFrame = data.frame("node"= uniqueVal,"distance"= rep(Inf, length(uniqueVal)), "visited"=  rep(FALSE, length(uniqueVal)) )
-  finalFrame[[2]][which(finalFrame[[1]]==a)]=0
+  finalFrame[[2]][which(finalFrame[[1]]==init_node)]=0
   finalFrame
   visited <- c()
   while(length(uniqueVal)>0){

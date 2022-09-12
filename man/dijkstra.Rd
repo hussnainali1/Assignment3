@@ -4,12 +4,12 @@
 \alias{dijkstra}
 \title{this is the solution for dijkstra Algorithm}
 \usage{
-dijkstra(wiki_graph, a)
+dijkstra(wiki_graph, init_node)
 }
 \arguments{
 \item{wiki_graph}{A DataFrame}
 
-\item{a}{A Number}
+\item{init_node}{A Number}
 }
 \value{
 A Vector
