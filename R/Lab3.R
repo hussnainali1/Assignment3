@@ -15,7 +15,7 @@ while( loopCounter <= a){
 
 
 
-eu <- function(wiki_graph, a){
+dijkstra <- function(wiki_graph, a){
   uniqueVal <- unique(wiki_graph[[1]]) #nodes
   finalFrame = data.frame("node"= uniqueVal,"distance"= rep(Inf, length(uniqueVal)), "visited"=  rep(FALSE, length(uniqueVal)) )
   finalFrame[[2]][which(finalFrame[[1]]==a)]=0
