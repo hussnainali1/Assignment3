@@ -1,3 +1,14 @@
+#' euclidean of two Numbers
+#'
+#' @param a A number.
+#' @param b A number.
+#'
+#' @return A number.
+#' @export
+#'
+#' @examples
+#' euclidean(100,1000)
+#' euclidean(123612, 13892347912)
 euclidean <- function(a,b){
   answer <-  1
  loopCounter <- 2
@@ -11,6 +22,8 @@ while( loopCounter <= a){
 }
  return(answer)
 }
+
+
 
 
 
