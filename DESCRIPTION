@@ -4,9 +4,8 @@ Version: 0.0.0.9000
 Authors@R: 
     person("hussnain", "ali", , "hussnain.ali@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: We are calculating Euliden and dj
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: We are calculating Euliden and dj. Lets try to write more to check that it works
+License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.2.1

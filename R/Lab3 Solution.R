@@ -15,17 +15,16 @@ while( loopCounter <= a){
 
 
 
-test <- function(wiki_graph, a){
-  uniqueVal <- unique(wiki_graph[[1]]) #nodes 
-  #uniqueVal <- c(6)
+eu <- function(wiki_graph, a){
+  uniqueVal <- unique(wiki_graph[[1]]) #nodes
   finalFrame = data.frame("node"= uniqueVal,"distance"= rep(Inf, length(uniqueVal)), "visited"=  rep(FALSE, length(uniqueVal)) )
   finalFrame[[2]][which(finalFrame[[1]]==a)]=0
   finalFrame
   visited <- c()
-  while(length(uniqueVal)>0){ 
+  while(length(uniqueVal)>0){
     minIndex <-as.numeric(min(finalFrame[[2]][finalFrame[[3]]==FALSE]))
     initialNode <- finalFrame$node[finalFrame$visited==FALSE & finalFrame$distance == minIndex][1]
-    
+
     finalFrame[[3]][which(finalFrame[[1]]==initialNode)] <- TRUE
     nabours <- wiki_graph$v2[which(wiki_graph$v1==initialNode)]
     nabours <- nabours[nabours %in% uniqueVal]
@@ -38,10 +37,10 @@ test <- function(wiki_graph, a){
         finalFrame$distance[which(finalFrame$node==item)]=distanCalc
         finalFrame
       }
-    } 
+    }
     uniqueVal <- uniqueVal[uniqueVal!= initialNode]
   }
-  
+
   return(finalFrame$distance)
 }
 
