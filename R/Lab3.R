@@ -28,6 +28,15 @@ while( loopCounter <= a){
 
 
 
+#' this is the solution for dijkstra Algorithm
+#'
+#' @param wiki_graph A DataFrame
+#' @param a A Number
+#'
+#' @return A Vector
+#' @export
+#'
+#' @examples
 dijkstra <- function(wiki_graph, a){
   uniqueVal <- unique(wiki_graph[[1]]) #nodes
   finalFrame = data.frame("node"= uniqueVal,"distance"= rep(Inf, length(uniqueVal)), "visited"=  rep(FALSE, length(uniqueVal)) )
