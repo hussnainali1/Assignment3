@@ -10,6 +10,9 @@
 #' euclidean(100,1000)
 #' euclidean(123612, 13892347912)
 euclidean <- function(a,b){
+  if(a<0)a <- a/-1
+  if(b<0)a <- b/-1
+  stopifnot(is.numeric(a),is.numeric(b))
   answer <-  1
  loopCounter <- 2
 while( loopCounter <= a){
@@ -44,6 +47,8 @@ while( loopCounter <= a){
 #' dijkstra(wiki_graph, 3)
 
 dijkstra <- function(wiki_graph, a){
+  stopifnot(!is.null(wiki_graph$v1), !is.null(wiki_graph$v2), !is.null(wiki_graph$w), a %in% unique(wiki_graph[[1]]))
+  stopifnot(is.data.frame(wiki_graph), is.numeric(a))
   uniqueVal <- unique(wiki_graph[[1]]) #nodes
   finalFrame = data.frame("node"= uniqueVal,"distance"= rep(Inf, length(uniqueVal)), "visited"=  rep(FALSE, length(uniqueVal)) )
   finalFrame[[2]][which(finalFrame[[1]]==a)]=0
