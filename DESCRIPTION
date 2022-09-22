@@ -1,10 +1,10 @@
 Package: assignment3
 Title: Assignment three solution
-Version: 0.0.0.9000
+Version: 1.0.0
 Authors@R: 
-    person("hussnain", "ali", , "hussnain.ali@gmail.com", role = c("aut", "cre"),
+    person("hussnain", "ali", , "hussnainkhilgi1@gmail.com attaullahkhan.comsats@gmail.com", role = c("aut", "cre"),
            comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: We are testing it and lets discuss later.
+Description: We Provide Dijkstra and Ecludian For Your Data Set.
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)

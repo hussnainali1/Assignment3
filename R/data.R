@@ -1,6 +1,6 @@
-#' Title
+#' Wiki_Graph
 #'
-#' Description
+#' It Contains a Data Set
 #'
 #' @format A data frame with nodes and weight:
 #' \describe{
