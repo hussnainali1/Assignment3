@@ -3,7 +3,7 @@
 \docType{data}
 \name{wiki_graph}
 \alias{wiki_graph}
-\title{Title}
+\title{Wiki_Graph}
 \format{
 A data frame with nodes and weight:
 \describe{
@@ -16,6 +16,6 @@ A data frame with nodes and weight:
 wiki_graph
 }
 \description{
-Description
+It Contains a Data Set
 }
 \keyword{datasets}
