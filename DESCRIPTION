@@ -1,11 +1,9 @@
 Package: assignment3
 Title: Assignment three solution
 Version: 1.0.0
-Authors@R:
-c(
-    person("hussnain", "ali", , "hussnainkhilgi1@gmail.com", role = c("aut", "cre"),comment = c(ORCID = "YOUR-ORCID-ID")),
-    person("atta-ur", "rehman", , "attaullahkhan.comsats@gmail.com", role = c("aut", "cre"),comment = c(ORCID = "YOUR-ORCID-ID"))
-    )
+Authors@R: 
+    person("hussnain", "ali", , "hussnainkhilgi1@gmail.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
 Description: We Provide Dijkstra and Ecludian For Your Data Set.
 License: MIT + file LICENSE
 Encoding: UTF-8
